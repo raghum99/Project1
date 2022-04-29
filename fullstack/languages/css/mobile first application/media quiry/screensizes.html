@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Media Quiry</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+            .item{
+                background-color: yellow;
+                color: black;
+                font-size: 50px;
+                display: none;
+
+            }
+
+            @media (max-width: 300px){
+                #item-1{
+                    background-color: yellow;
+                    display: block;
+                }
+            }
+            @media (min-width: 301px) and (max-width: 600px){
+                #item-2{
+                    background-color: green;
+                    display: block;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 900px){
+                #item-3{
+                    background-color: pink;
+                    display: block;
+                }
+            }
+            @media (min-width: 901px){
+                #item-4{
+                    background-color: red;
+                    display: block;
+                }
+            }
+        </style>
+       <div id="parent">
+           <div class="item" id="item-1">Small Screen from 300px</div>
+           <div class="item" id="item-2">Tabs from 301px to 600px</div>
+           <div class="item" id="item-3">Laptops 601px to 900px</div>
+           <div class="item" id="item-4">Large Screen 901px to as much as large</div>
+       </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
